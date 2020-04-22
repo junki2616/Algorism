@@ -8,19 +8,27 @@ protocol hogeProtocol{
 
 class hogeClass:hogeProtocol{
     
+    var target:Int = 100
     var setGet: Int {
         
-        set(p){
-            target = p - 10
-        }
         get{
             return target + 10
         }
+        
+        set{
+            target = newValue - 10
+        }
     }
     
-    var target:Int = 100
     
 }
 
+var hoge = hogeClass()
+hoge.setGet
+hoge.target
+
+hoge.setGet = 80
+hoge.setGet
+hoge.target
 
 

@@ -1,3 +1,4 @@
+//protocol
 
 protocol hogeProtocol{
     
@@ -6,6 +7,7 @@ protocol hogeProtocol{
 }
 
 
+//setter getter
 class hogeClass:hogeProtocol{
     
     var target:Int = 100
@@ -31,4 +33,18 @@ hoge.setGet = 80
 hoge.setGet
 hoge.target
 
+
+
+//extension
+var testString = "あいうえお"
+testString.plusString
+
+
+extension String{
+    
+    var plusString: String{
+        
+        return "『\(self)』"
+    }
+}
 

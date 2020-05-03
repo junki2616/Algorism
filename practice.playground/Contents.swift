@@ -36,7 +36,7 @@ hoge.target
 
 
 //extension
-var testString = "あいうえおか"
+var testString = "あいうえお"
 testString.plusString
 
 
